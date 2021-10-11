@@ -2,7 +2,12 @@
 //Using filter create one function that only returns the 
 // even numbers of an array
 // Now write a function that returns only the odds
+const numList = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
 
+function returnEven(arr) {
+  let evens = arr.filter(x => !(x %2))
+  return evens;
+}
 
 
 
@@ -56,3 +61,4 @@ let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resid
 //add up all the ages in the array of objects
 // the ages in the array of objects below should equate to 78
 [{name: 'Josh', age: 24}, {name: 'Meghan', age: 34}, {name: 'Samantha', age: 20}]
+
