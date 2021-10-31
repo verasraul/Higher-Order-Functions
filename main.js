@@ -69,17 +69,26 @@ let users = [{ firstName: 'Bradley', lastName: 'Bouley', role: 'Full Stack Resid
              { firstName: 'Wes', lastName: 'Reid', role: 'Instructor'},
              { firstName: 'Zach', lastName: 'Klabunde', role: 'Instructor' }];
              
+const result = users.filter(user => user.role === 'Full Stack Resident');
+
+// needed to add JSON.stringify in order to parse the info to the console.
+console.log(JSON.stringify(result));
 
 
 //Bonus
 //Using Reduce
 //add up all the ages in the array of objects
 // the ages in the array of objects below should equate to 78
-[{name: 'Josh', age: 24}, {name: 'Meghan', age: 34}, {name: 'Samantha', age: 20}]
+const userList = [{name: 'Josh', age: 24}, {name: 'Meghan', age: 34}, {name: 'Samantha', age: 20}];
+
+// star at 0, accumulate age (intergers) left to right.
+console.log(userList.reduce((accumulator, currentUser) => {
+  console.log(accumulator);
+  return accumulator + currentUser.age;
+}, 0));
 
 
-for (let index = 0; index < array.length; index++) {
-  const element = array[index];
-  
-}
+
+
+
 
